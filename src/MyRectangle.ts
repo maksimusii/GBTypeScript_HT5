@@ -1,15 +1,15 @@
 import { MyAreaPrimitive2D } from './MyAreaPrimitive2D.js'
 
 export class MyRectangle extends MyAreaPrimitive2D {
-  public w: number
-  public h: number
-  public x: number
-  public y: number
-  constructor (w: number, h: number, x: number, y: number, primitive: object, square: number) {
-    super(primitive, square)
-    this.w = w
-    this.h = h
-    this.x = x
-    this.y = y
+  public widht: number
+  public height: number
+  
+  constructor(posX: number, posY: number, widht: number, height: number){
+    super(posX, posY)
+    this.widht = widht
+    this.height = height
+  }
+  public squre(): number {
+    return this.widht * this.height
   }
 }
